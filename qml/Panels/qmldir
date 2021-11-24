@@ -1,0 +1,4 @@
+module Panels
+
+ToolsPanel ToolsPanel.qml
+CanvasPanel CanvasPanel.qml

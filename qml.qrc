@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qml/ResourceProvider/qmldir</file>
+        <file>qml/ResourceProvider/ResourceProvider.qml</file>
+        <file>qml/StyleConstants/qmldir</file>
+        <file>qml/StyleConstants/StyleConstants.qml</file>
+        <file>qml/Panels/qmldir</file>
+        <file>qml/Panels/ToolsPanel.qml</file>
+        <file>qml/Templates/IconButton.qml</file>
+        <file>qml/Templates/Panel.qml</file>
+        <file>qml/Templates/qmldir</file>
+        <file>resources/icons/katakana_ka.png</file>
+        <file>resources/icons/rectangle.png</file>
+    </qresource>
+</RCC>
