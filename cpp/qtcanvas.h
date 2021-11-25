@@ -15,10 +15,8 @@ public:
 
     void paint(QPainter* painter);
 
-    void addRect(QRect rect);
+    Q_INVOKABLE void addItem(QRect& r, QColor& c);
 
 private:
-//    QList<QtCanvasItem>* m_items;
-
-//    void addItem(QtCanvasItem* item);
+    QList<QtCanvasItem> m_items;
 };

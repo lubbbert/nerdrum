@@ -34,5 +34,14 @@ ApplicationWindow {
         anchors.top: parent.top
         anchors.bottom: parent.bottom
         anchors.right: parent.right
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                canvasPanel.addItem(Qt.rect(mouseX, mouseY, 40, 40),
+                                    Qt.color(StyleConstants.colors.highlight))
+                console.log(mouseX, mouseY, 40, 40)
+            }
+        }
     }
 }
