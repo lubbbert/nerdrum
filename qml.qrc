@@ -13,5 +13,6 @@
         <file>resources/icons/katakana_ka.png</file>
         <file>resources/icons/rectangle.png</file>
         <file>qml/Panels/CanvasPanel.qml</file>
+        <file>nerdrum.ico</file>
     </qresource>
 </RCC>
