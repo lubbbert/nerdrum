@@ -12,5 +12,6 @@
         <file>qml/Templates/qmldir</file>
         <file>resources/icons/katakana_ka.png</file>
         <file>resources/icons/rectangle.png</file>
+        <file>qml/Panels/CanvasPanel.qml</file>
     </qresource>
 </RCC>

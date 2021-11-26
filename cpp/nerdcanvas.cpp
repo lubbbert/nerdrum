@@ -1,10 +1,10 @@
-#include "qtcanvas.h"
+#include "nerdcanvas.h"
 
-QtCanvas::QtCanvas(QQuickItem* parent)
+NerdCanvas::NerdCanvas(QQuickItem* parent)
 {
 }
 
-void QtCanvas::paint(QPainter* painter)
+void NerdCanvas::paint(QPainter* painter)
 {
     qDebug() << "QtCanvas::paint start!";
     painter->setBrush(Qt::black);
@@ -17,15 +17,9 @@ void QtCanvas::paint(QPainter* painter)
     qDebug() << "QtCanvas::paint items end";
 }
 
-void QtCanvas::addItem(QRect& r, QColor& c)
+void NerdCanvas::addItem(QRect& r, QColor& c)
 {
-    auto item = QtCanvasItem("Rect", QtCanvasItem::ItemTypes::Geometry, r, this);
+    auto item = NerdCanvasItem("Rect", NerdCanvasItem::ItemTypes::Geometry, r, this);
     m_items.append(item);
     this->update(QRect(0, 0, this->width(), this->height()));
 }
-
-
-//void QtCanvas::addItem(QtCanvasItem item)
-//{
-
-//}

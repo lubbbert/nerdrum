@@ -1,6 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include "cpp/qtcanvas.h"
+#include "cpp/nerdcanvas.h"
 
 int main(int argc, char *argv[])
 {
@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    qmlRegisterType<QtCanvas>("qtcanvas", 1, 0, "QtCanvas");
+    qmlRegisterType<NerdCanvas>("CppNerdCanvas", 1, 0, "NerdCanvas");
 
     QQmlApplicationEngine engine;
     engine.addImportPath(":/qml");

@@ -2,7 +2,6 @@ import QtQuick
 import QtQuick.Controls
 import Panels
 import StyleConstants
-import qtcanvas
 
 ApplicationWindow {
     id: appWindow
@@ -20,28 +19,19 @@ ApplicationWindow {
 
     color: palette.light
 
-    ToolsPanel {
-        id: toolsPanel
-        anchors.left: parent.left
-        anchors.top: parent.top
-        anchors.bottom: parent.bottom
-        width: 40
-    }
+    Row {
+        anchors.fill: parent
 
-    QtCanvas {
-        id: canvasPanel
-        anchors.left: toolsPanel.right
-        anchors.top: parent.top
-        anchors.bottom: parent.bottom
-        anchors.right: parent.right
+        ToolsPanel {
+            id: toolsPanel
+            width: 40
+            height: parent.height
+        }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                canvasPanel.addItem(Qt.rect(mouseX, mouseY, 40, 40),
-                                    Qt.color(StyleConstants.colors.highlight))
-                console.log(mouseX, mouseY, 40, 40)
-            }
+        CanvasPanel {
+            id: canvasPanel
+            width: parent.width - toolsPanel.width
+            height: parent.height
         }
     }
 }

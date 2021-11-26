@@ -4,19 +4,19 @@
 #include <QObject>
 #include <QList>
 #include <QPainter>
-#include "qtcanvasitem.h"
+#include "nerdcanvasitem.h"
 
-class QtCanvas : public QQuickPaintedItem
+class NerdCanvas : public QQuickPaintedItem
 {
     Q_OBJECT
 
 public:
-    explicit QtCanvas(QQuickItem* parent = nullptr);
+    explicit NerdCanvas(QQuickItem* parent = nullptr);
 
     void paint(QPainter* painter);
 
     Q_INVOKABLE void addItem(QRect& r, QColor& c);
 
 private:
-    QList<QtCanvasItem> m_items;
+    QList<NerdCanvasItem> m_items;
 };

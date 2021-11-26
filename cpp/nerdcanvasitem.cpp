@@ -1,6 +1,6 @@
-#include "qtcanvasitem.h"
+#include "nerdcanvasitem.h"
 
-QtCanvasItem::QtCanvasItem(const QString& name,
+NerdCanvasItem::NerdCanvasItem(const QString& name,
                            const ItemTypes& type,
                            const QRect& rect,
                            QQuickItem* parent)
@@ -9,16 +9,16 @@ QtCanvasItem::QtCanvasItem(const QString& name,
     this->m_type = type;
     this->m_rect = rect;
     this->setParent(parent);
-    qDebug() << "QtCanvasItem()" << rect.x() << rect.y();
-    qDebug() << "QtCanvasItem()" << m_rect.x() << m_rect.y();
+    qDebug() << "NerdCanvasItem()" << rect.x() << rect.y();
+    qDebug() << "NerdCanvasItem()" << m_rect.x() << m_rect.y();
 }
 
-QtCanvasItem& QtCanvasItem::operator=(const QtCanvasItem& other)
+NerdCanvasItem& NerdCanvasItem::operator=(const NerdCanvasItem& other)
 {
     return *this;
 }
 
-QtCanvasItem::QtCanvasItem(const QtCanvasItem& other)
+NerdCanvasItem::NerdCanvasItem(const NerdCanvasItem& other)
 {
     this->m_name = other.name();
     this->m_type = other.type();
@@ -26,33 +26,33 @@ QtCanvasItem::QtCanvasItem(const QtCanvasItem& other)
 }
 
 
-void QtCanvasItem::paint(QPainter* painter)
+void NerdCanvasItem::paint(QPainter* painter)
 {
     painter->setPen(QColor(100, 199, 255));
     painter->drawRect(QRect(m_rect.x(), m_rect.y(), m_rect.width(), m_rect.height()));
 }
 
-QString QtCanvasItem::name() const
+QString NerdCanvasItem::name() const
 {
     return m_name;
 }
 
-void QtCanvasItem::setName(QString& name)
+void NerdCanvasItem::setName(QString& name)
 {
     m_name = name;
 }
 
-QtCanvasItem::ItemTypes QtCanvasItem::type() const
+NerdCanvasItem::ItemTypes NerdCanvasItem::type() const
 {
     return m_type;
 }
 
-const QRect& QtCanvasItem::rect() const
+const QRect& NerdCanvasItem::rect() const
 {
     return m_rect;
 }
 
-void QtCanvasItem::setRect(const QRect& rect)
+void NerdCanvasItem::setRect(const QRect& rect)
 {
     m_rect = rect;
 }
