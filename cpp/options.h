@@ -3,7 +3,7 @@
 #include <QObject>
 #include <QJsonDocument>
 
-class Options
+class Options : QObject
 {
     Q_OBJECT
 
@@ -15,5 +15,5 @@ public:
     };
 
 private:
-    void load()
+    void load();
 };
