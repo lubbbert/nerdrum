@@ -4,7 +4,7 @@
 #include <QObject>
 #include <QList>
 #include <QPainter>
-#include "nerdcanvasitem.h"
+#include "nerdcanvasitem.hpp"
 
 class NerdCanvas : public QQuickPaintedItem
 {

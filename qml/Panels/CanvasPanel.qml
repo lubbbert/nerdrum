@@ -1,5 +1,5 @@
 import QtQuick
-import CppNerdCanvas
+import Qt.NerdCanvas
 
 NerdCanvas {
     id: canvas

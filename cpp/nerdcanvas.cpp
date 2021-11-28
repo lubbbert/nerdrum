@@ -1,4 +1,4 @@
-#include "nerdcanvas.h"
+#include "nerdcanvas.hpp"
 
 NerdCanvas::NerdCanvas(QQuickItem* parent)
 {

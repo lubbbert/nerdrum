@@ -1,4 +1,4 @@
-#include "nerdcanvasitem.h"
+#include "nerdcanvasitem.hpp"
 
 NerdCanvasItem::NerdCanvasItem(const QString& name,
                            const ItemTypes& type,

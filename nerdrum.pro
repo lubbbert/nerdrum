@@ -9,15 +9,17 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    cpp/dispatcher.cpp \
     cpp/nerdcanvas.cpp \
     cpp/nerdcanvasitem.cpp \
     cpp/options.cpp \
         main.cpp \
 
 HEADERS += \
-    cpp/nerdcanvas.h \
-    cpp/nerdcanvasitem.h \
-    cpp/options.h
+    cpp/dispatcher.hpp \
+    cpp/nerdcanvas.hpp \
+    cpp/nerdcanvasitem.hpp \
+    cpp/options.hpp
 
 RESOURCES += qml.qrc
 
