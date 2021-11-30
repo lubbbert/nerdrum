@@ -12,14 +12,17 @@ SOURCES += \
     cpp/dispatcher.cpp \
     cpp/nerdcanvas.cpp \
     cpp/nerdcanvasitem.cpp \
-    cpp/options.cpp \
+    cpp/settings/gridsettings.cpp \
+    cpp/settings/settings.cpp \
         main.cpp \
 
 HEADERS += \
     cpp/dispatcher.hpp \
     cpp/nerdcanvas.hpp \
     cpp/nerdcanvasitem.hpp \
-    cpp/options.hpp
+    cpp/settings.hpp \
+    cpp/settings/gridsettings.h \
+    cpp/settings/settings.hpp
 
 RESOURCES += qml.qrc
 

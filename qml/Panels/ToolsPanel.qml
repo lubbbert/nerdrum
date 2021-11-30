@@ -1,30 +1,23 @@
 import QtQuick
-import QtQuick.Controls
 import Templates as T
 import ResourceProvider
 
 T.Panel {
-    id: root
+    id: toolsPanel
 
-    content: Grid {
-        id: content
-        columns: 1
-        columnSpacing: 1
-        rowSpacing: 1
-        clip: true
+    direction: T.Panel.Direction.Vertical
 
-        Repeater {
-            model: [{
-                    "iconSource": ResourceProvider.toolsIcons.katakana
-                }, {
-                    "iconSource": ResourceProvider.toolsIcons.rectangle
-                }]
+    content: Repeater {
+        model: [{
+                "iconSource": ResourceProvider.toolsIcons.katakana
+            }, {
+                "iconSource": ResourceProvider.toolsIcons.rectangle
+            }]
 
-            T.IconButton {
-                width: content.width
-                height: width
-                iconSource: modelData.iconSource
-            }
+        delegate: T.IconButton {
+            width: toolsPanel.minItemSize
+            height: toolsPanel.minItemSize
+            iconSource: modelData.iconSource
         }
     }
 }

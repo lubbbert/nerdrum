@@ -4,7 +4,6 @@ import Qt.NerdCanvas
 NerdCanvas {
     id: canvas
 
-
     MouseArea {
         id: mouseArea
 
@@ -13,8 +12,6 @@ NerdCanvas {
         anchors.fill: parent
         onClicked: {
 
-            //            canvas.addItem(Qt.rect(mouseX, mouseY, 40, 40), Qt.color("white"))
-            //            console.log(mouseX, mouseY, 40, 40)
         }
         onPressed: {
             pressedPoint = Qt.point(mouseX, mouseY)

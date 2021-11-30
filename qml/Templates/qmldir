@@ -2,3 +2,4 @@ module Templates
 
 IconButton IconButton.qml
 Panel Panel.qml
+Window Window.qml

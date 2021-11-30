@@ -12,12 +12,18 @@ ApplicationWindow {
 
     palette {
         highlight: StyleConstants.colors.highlight
+        base: StyleConstants.colors.base
         light: StyleConstants.colors.light
         dark: StyleConstants.colors.dark
         mid: StyleConstants.colors.mid
     }
 
     color: palette.light
+
+    menuBar: MenuPanel {
+        id: menuPanel
+        height: 40
+    }
 
     Row {
         anchors.fill: parent

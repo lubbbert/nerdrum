@@ -9,8 +9,6 @@ NerdCanvasItem::NerdCanvasItem(const QString& name,
     this->m_type = type;
     this->m_rect = rect;
     this->setParent(parent);
-    qDebug() << "NerdCanvasItem()" << rect.x() << rect.y();
-    qDebug() << "NerdCanvasItem()" << m_rect.x() << m_rect.y();
 }
 
 NerdCanvasItem& NerdCanvasItem::operator=(const NerdCanvasItem& other)

@@ -13,9 +13,5 @@ Dispatcher::Task Dispatcher::task() const
 void Dispatcher::setTask(Task task)
 {
     m_task = task;
-}
-
-void Dispatcher::taskChanged()
-{
-
+    emit taskChanged();
 }
