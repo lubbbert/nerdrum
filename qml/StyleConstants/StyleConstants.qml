@@ -3,6 +3,10 @@ pragma Singleton
 import QtQuick
 
 QtObject {
+    readonly property var screen: QtObject {
+        readonly property int width: Screen.width
+        readonly property int height: Screen.height
+    }
 
     readonly property var colors: QtObject {
         readonly property color highlight: "#fa314a"
