@@ -5,12 +5,12 @@ Item {
     id: root
 
     property string iconSource
+    property bool holded: false
 
     Rectangle {
         id: background
         anchors.fill: parent
         color: palette.dark
-        radius: 3
     }
 
     Item {
@@ -21,7 +21,7 @@ Item {
         Rectangle {
             id: iconColor
             anchors.fill: parent
-            color: palette.light
+            color: palette.base
             visible: false
         }
 
@@ -48,15 +48,20 @@ Item {
 
     states: [
         State {
-            name: 'focus'
-            when: mouseArea.containsMouse
+            name: 'holded'
+            when: root.holded
             PropertyChanges {
                 target: iconColor
                 color: palette.highlight
             }
+        },
+
+        State {
+            name: 'focus'
+            when: mouseArea.containsMouse
             PropertyChanges {
-                target: background
-                color: palette.mid
+                target: iconColor
+                color: palette.light
             }
         }
     ]

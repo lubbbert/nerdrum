@@ -3,6 +3,7 @@ import QtQuick.Controls
 import Panels
 import StyleConstants
 
+
 ApplicationWindow {
     id: appWindow
     width: 640
