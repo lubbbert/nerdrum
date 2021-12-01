@@ -6,6 +6,7 @@ Item {
 
     property string iconSource
     property bool holded: false
+    signal clicked
 
     Rectangle {
         id: background
@@ -16,7 +17,7 @@ Item {
     Item {
         id: icon
         anchors.fill: parent
-        anchors.margins: parent.height * 0.2
+        anchors.margins: parent.height * 0.1
 
         Rectangle {
             id: iconColor
@@ -44,6 +45,7 @@ Item {
         anchors.fill: parent
         hoverEnabled: true
         cursorShape: Qt.PointingHandCursor
+        onClicked: root.clicked()
     }
 
     states: [

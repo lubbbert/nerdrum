@@ -11,5 +11,6 @@ QtObject {
 
     readonly property var menuIcons: QtObject {
         readonly property string save: "qrc:/resources/icons/save.png"
+        readonly property string settings: "qrc:/resources/icons/settings.png"
     }
 }

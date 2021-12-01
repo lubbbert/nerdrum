@@ -23,7 +23,7 @@ ApplicationWindow {
 
     menuBar: MenuPanel {
         id: menuPanel
-        height: StyleConstants.screen.height * 0.035
+        height: StyleConstants.screen.menuPanelHeight
     }
 
     Row {
@@ -31,7 +31,7 @@ ApplicationWindow {
 
         ToolsPanel {
             id: toolsPanel
-            width: StyleConstants.screen.width * 0.025
+            width: StyleConstants.screen.leftPanelWidth
             height: parent.height
             Component.onCompleted: console.log(StyleConstants.screen.width, StyleConstants.screen.height)
         }
