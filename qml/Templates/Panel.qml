@@ -12,7 +12,7 @@ Item {
     }
 
     property Component content
-    property int direction: Panel.Direction.Horizontal  
+    property int direction: Panel.Direction.Horizontal
     property alias layoutDirection: contentGrid.layoutDirection
 
     readonly property int minSize: Math.min(root.width, root.height)
@@ -29,8 +29,8 @@ Item {
         anchors.fill: parent
         padding: root.minSize * 0.1
 
-        columnSpacing: StyleConstants.screen.panelSpacing
-        rowSpacing: StyleConstants.screen.panelSpacing
+        columnSpacing: StyleConstants.geometry.panelSpacing
+        rowSpacing: StyleConstants.geometry.panelSpacing
         verticalItemAlignment: Grid.AlignVCenter
         horizontalItemAlignment: Grid.AlignHCenter
 

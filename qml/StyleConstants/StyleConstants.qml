@@ -4,8 +4,13 @@ import QtQuick
 
 QtObject {
     readonly property var screen: QtObject {
+        readonly property int width: Screen.width
+        readonly property int height: Screen.height
         readonly property real ratio: Screen.width / Screen.height
-        readonly property int menuPanelHeight: Screen.height * ratio * 0.020
+    }
+
+    readonly property var geometry: QtObject {
+        readonly property int menuPanelHeight: Screen.height * screen.ratio * 0.020
         readonly property int leftPanelWidth: Screen.width * 0.020
         readonly property int rightPanelWidth: Screen.width * 0.015
         readonly property int panelSpacing: 4

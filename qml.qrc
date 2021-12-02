@@ -20,6 +20,5 @@
         <file>qml/Panels/MenuPanel.qml</file>
         <file>resources/icons/save.png</file>
         <file>resources/icons/settings.png</file>
-        <file>qml/Windows/ModalWindowsManager.qml</file>
     </qresource>
 </RCC>

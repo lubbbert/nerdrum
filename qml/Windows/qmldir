@@ -1,4 +1,3 @@
 module Windows
 
-SettingsWindow SettingsWindow.qml
-singletone ModalWindowsManager ModalWindowsManager.qml
+singleton SettingsWindow 1.0 SettingsWindow.qml

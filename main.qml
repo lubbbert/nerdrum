@@ -3,7 +3,6 @@ import QtQuick.Controls
 import Panels
 import StyleConstants
 
-
 ApplicationWindow {
     id: appWindow
     width: 640
@@ -23,7 +22,7 @@ ApplicationWindow {
 
     menuBar: MenuPanel {
         id: menuPanel
-        height: StyleConstants.screen.menuPanelHeight
+        height: StyleConstants.geometry.menuPanelHeight
     }
 
     Row {
@@ -31,9 +30,8 @@ ApplicationWindow {
 
         ToolsPanel {
             id: toolsPanel
-            width: StyleConstants.screen.leftPanelWidth
+            width: StyleConstants.geometry.leftPanelWidth
             height: parent.height
-            Component.onCompleted: console.log(StyleConstants.screen.width, StyleConstants.screen.height)
         }
 
         CanvasPanel {
