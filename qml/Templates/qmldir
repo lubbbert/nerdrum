@@ -2,4 +2,4 @@ module Templates
 
 IconButton IconButton.qml
 Panel Panel.qml
-PopupWindow PopupWindow.qml
+ModalWindow ModalWindow.qml

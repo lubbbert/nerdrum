@@ -14,11 +14,12 @@
         <file>resources/icons/rectangle.png</file>
         <file>qml/Panels/CanvasPanel.qml</file>
         <file>nerdrum.ico</file>
-        <file>qml/Templates/PopupWindow.qml</file>
+        <file>qml/Templates/ModalWindow.qml</file>
         <file>qml/Windows/qmldir</file>
         <file>qml/Windows/SettingsWindow.qml</file>
         <file>qml/Panels/MenuPanel.qml</file>
         <file>resources/icons/save.png</file>
         <file>resources/icons/settings.png</file>
+        <file>qml/Windows/ModalWindowsManager.qml</file>
     </qresource>
 </RCC>

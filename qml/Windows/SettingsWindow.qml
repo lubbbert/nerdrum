@@ -1,4 +1,8 @@
 import QtQuick
 import Templates as T
 
-T.Window {}
+T.ModalWindow {
+    id: root
+
+
+}

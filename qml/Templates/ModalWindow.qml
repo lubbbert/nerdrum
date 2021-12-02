@@ -11,6 +11,7 @@ Window {
     Rectangle {
         id: background
 
+        anchors.fill: parent
         radius: StyleConstants.screen.windowRadius
     }
 }
